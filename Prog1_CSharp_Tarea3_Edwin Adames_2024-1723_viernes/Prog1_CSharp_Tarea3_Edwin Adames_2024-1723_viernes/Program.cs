@@ -1,145 +1,161 @@
-﻿var ids = new List<int>();
+﻿Console.WriteLine("Agenda Saul");
+Console.WriteLine("Bienvenido a tu lista de contactos");
 
+Dictionary<int, string> nombres = new Dictionary<int, string>();
+Dictionary<int, string> telefonos = new Dictionary<int, string>();
+Dictionary<int, string> correos = new Dictionary<int, string>();
+List<string> direcciones = new List<string>();
+List<int> ids = new List<int>();
 
-var nombres = new Dictionary<int, string>();
-var apellidos = new Dictionary<int, string>();
-var telefonos = new Dictionary<int, string>();
-var direcciones = new Dictionary<int, string>();
-var edades = new Dictionary<int, int>();
-var contactosDeEmergencia = new Dictionary<int, bool>();
-var opcionSeleccionada = 1;
-var ejecutandose = true;
-Console.WriteLine("Bienvenido a mi agenda");
-
-while (ejecutandose)
+bool ejecutando = true;
+while (ejecutando)
 {
-    Console.WriteLine("1. Agregar Contacto, 2. Ver listado de contactos, 3. Actualizar un contacto, 4. Eliminar un Contacto. 5. Salir");
+    Console.Write("1. Agregar Contacto      ");
+    Console.Write("2. Ver Contactos     ");
+    Console.Write("3. Buscar Contacto      ");
+    Console.Write("4. Modificar Contacto        ");
+    Console.Write("5. Eliminar Contacto     ");
+    Console.WriteLine("6. Salir");
+    Console.WriteLine("......................................");
+    Console.Write("Elige una opción: ");
 
-    opcionSeleccionada = int.Parse(Console.ReadLine());
+    int opcion = Convert.ToInt32(Console.ReadLine());
 
-
-    if (opcionSeleccionada <= 0 || opcionSeleccionada >= 5)
+    switch (opcion)
     {
-        Console.WriteLine("A ti te dejaron caer cuando pequeño, verdad? ");
+        case 1:
+            AgregarContacto(ref nombres, ref telefonos, ref correos, ref direcciones, ref ids);
+            break;
+        case 2:
+            VerContactos(ref nombres, ref telefonos, ref correos, ref direcciones, ref ids);
+            break;
+        case 3:
+            BuscarContacto(ref nombres, ref telefonos, ref correos, ref direcciones, ref ids);
+            break;
+        case 4:
+            EditarContacto(ref nombres, ref telefonos, ref correos, ref direcciones, ref ids);
+            break;
+        case 5:
+            EliminarContacto(ref nombres, ref telefonos, ref correos, ref direcciones, ref ids);
+            break;
+        case 6:
+            ejecutando = false;
+            break;
+        default:
+            Console.WriteLine("Opción no válida");
+            break;
     }
-    else if (opcionSeleccionada == 5)
+}
+
+static void AgregarContacto(ref Dictionary<int, string> nombres, ref Dictionary<int, string> telefonos, ref Dictionary<int, string> correos, ref List<string> direcciones, ref List<int> ids)
+{
+    Console.WriteLine("Nuevo Contacto");
+
+    int id = ids.Count() + 1;
+    ids.Add(id);
+
+    Console.Write("Digite el Nombre: ");
+    var nombre = Console.ReadLine();
+    nombres.Add(id, nombre);
+
+    Console.Write("Digite el Teléfono: ");
+    var telefono = Console.ReadLine();
+    telefonos.Add(id, telefono);
+
+    Console.Write("Digite el Correo Electrónico: ");
+    var correo = Console.ReadLine();
+    correos.Add(id, correo);
+
+    Console.Write("Digite la Dirección: ");
+    var direccion = Console.ReadLine();
+    direcciones.Add(direccion);
+
+    Console.WriteLine();
+}
+
+static void VerContactos(ref Dictionary<int, string> nombres, ref Dictionary<int, string> telefonos, ref Dictionary<int, string> correos, ref List<string> direcciones, ref List<int> ids)
+{
+    Console.WriteLine("[Id] [Nombre] [Teléfono] [Correo] [Dirección]");
+    Console.WriteLine("_____________________________________________");
+
+    foreach (var id in ids)
     {
-        ejecutandose = false;
+        Console.WriteLine($"{id}    {nombres[id]}      {telefonos[id]}      {correos[id]}     {direcciones[id - 1]}");
+    }
+}
+
+static void EditarContacto(ref Dictionary<int, string> nombres, ref Dictionary<int, string> telefonos, ref Dictionary<int, string> correos, ref List<string> direcciones, ref List<int> ids)
+{
+    VerContactos(ref nombres, ref telefonos, ref correos, ref direcciones, ref ids);
+    Console.WriteLine("Digite el ID del contacto que desea editar: ");
+    int idSeleccionado = Convert.ToInt32(Console.ReadLine());
+
+    if (!nombres.ContainsKey(idSeleccionado))
+    {
+        Console.WriteLine("ERROR: El ID ingresado no existe.");
+        return;
+    }
+
+    Console.Write($"El nombre es: {nombres[idSeleccionado]}, Digite el Nuevo Nombre: ");
+    nombres[idSeleccionado] = Console.ReadLine();
+
+    Console.Write($"El Teléfono es: {telefonos[idSeleccionado]}, Digite el Nuevo Teléfono: ");
+    telefonos[idSeleccionado] = Console.ReadLine();
+
+    Console.Write($"El Correo es: {correos[idSeleccionado]}, Digite el Nuevo Correo: ");
+    correos[idSeleccionado] = Console.ReadLine();
+
+    Console.Write($"La dirección es: {direcciones[idSeleccionado - 1]}, Digite la nueva dirección: ");
+    direcciones[idSeleccionado - 1] = Console.ReadLine();
+}
+
+static void BuscarContacto(ref Dictionary<int, string> nombres, ref Dictionary<int, string> telefonos, ref Dictionary<int, string> correos, ref List<string> direcciones, ref List<int> ids)
+{
+    VerContactos(ref nombres, ref telefonos, ref correos, ref direcciones, ref ids);
+    Console.WriteLine("Digite el ID del contacto que desea buscar: ");
+    int idSeleccionado = Convert.ToInt32(Console.ReadLine());
+
+    if (!nombres.ContainsKey(idSeleccionado))
+    {
+        Console.WriteLine("ERROR: El ID ingresado no existe.");
+        return;
+    }
+
+    Console.WriteLine($"El nombre es: {nombres[idSeleccionado]}");
+    Console.WriteLine($"El Teléfono es: {telefonos[idSeleccionado]}");
+    Console.WriteLine($"El Correo es: {correos[idSeleccionado]}");
+    Console.WriteLine($"La Dirección es: {direcciones[idSeleccionado - 1]}");
+}
+
+static void EliminarContacto(ref Dictionary<int, string> nombres, ref Dictionary<int, string> telefonos, ref Dictionary<int, string> correos, ref List<string> direcciones, ref List<int> ids)
+{
+    VerContactos(ref nombres, ref telefonos, ref correos, ref direcciones, ref ids);
+    Console.WriteLine("Digite el ID del contacto que desea eliminar: ");
+    int idSeleccionado = Convert.ToInt32(Console.ReadLine());
+
+    if (!nombres.ContainsKey(idSeleccionado))
+    {
+        Console.WriteLine("ERROR: El ID ingresado no existe.");
+        return;
+    }
+
+    Console.WriteLine("Está a punto de eliminar el contacto?");
+    Console.WriteLine("¿Seguro que desea eliminarlo? 1. Sí, 2. No");
+
+    int opcion = Convert.ToInt32(Console.ReadLine());
+    if (opcion == 1)
+    {
+        nombres.Remove(idSeleccionado);
+        telefonos.Remove(idSeleccionado);
+        correos.Remove(idSeleccionado);
+        direcciones.RemoveAt(idSeleccionado - 1);
+        ids.Remove(idSeleccionado);
+
+        Console.WriteLine("Contacto eliminado con éxito.");
     }
     else
     {
-        switch (opcionSeleccionada)
-        {
-            case 1:
-                {
-                    AgregarContacto(ids, nombres, apellidos, telefonos, direcciones, edades, contactosDeEmergencia);
-                    break;
-                }
-            case 2:
-                {
-                    Console.WriteLine("Digite el Id, del contacto que desea Visualizar");
-                    var idSeleccionado = int.Parse(Console.ReadLine());
-
-                    MostrarContacto(idSeleccionado, ids, nombres, apellidos, telefonos, direcciones, edades, contactosDeEmergencia);
-
-                    break;
-                }
-            case 3:
-                {
-                    break;
-                }
-            case 4:
-                {
-                    ejecutandose = false;
-                    break;
-                }
-        }
-
-
-
+        Console.WriteLine("Eliminación cancelada.");
     }
-
-
-}
-
-Console.WriteLine("Cerrando el PRograma");
-Console.ReadKey();
-
-static int GeneradorDeId(List<int> ids)
-{
-    var id = ids.Count();
-    id++;
-    return id;
-}
-
-static bool DeterminarSiEsContactoDeEmergencia()
-{
-    Console.Write("Es un contacto de emergencia? 1. Si, 2. No: ");
-
-    int contactoDeEmergenciaDigitado = int.Parse(Console.ReadLine());
-
-    return contactoDeEmergenciaDigitado == 1 ? true : false;
-}
-
-static void MostrarContacto(int idIndicado, List<int> ids, Dictionary<int, string> nombres, Dictionary<int, string> apellidos, Dictionary<int, string> telefonos, Dictionary<int, string> direcciones, Dictionary<int, int> edades, Dictionary<int, bool> contactosDeEmergencia)
-{
-    string nombre, apellido, telefono, direccion, esContactoDeEmergencia;
-    int edad;
-
-    BuscarContacto(idIndicado, nombres, apellidos, telefonos, direcciones, edades, contactosDeEmergencia, out nombre, out apellido, out telefono, out edad, out direccion, out esContactoDeEmergencia);
-
-    MostrarValoresEnPantallaDeContactoSeleccionado(nombre, apellido, telefono, direccion, edad, esContactoDeEmergencia, idIndicado);
-
-}
-
-static void BuscarContacto(int idIndicado, Dictionary<int, string> nombres, Dictionary<int, string> apellidos, Dictionary<int, string> telefonos, Dictionary<int, string> direcciones, Dictionary<int, int> edades, Dictionary<int, bool> contactosDeEmergencia, out string nombre, out string apellido, out string telefono, out int edad, out string direccion, out string esContactoDeEmergencia)
-{
-    nombre = nombres[idIndicado];
-    apellido = apellidos[idIndicado];
-    telefono = telefonos[idIndicado];
-    edad = edades[idIndicado];
-    direccion = direcciones[idIndicado];
-    esContactoDeEmergencia = contactosDeEmergencia[idIndicado] ? "Si" : "No";
-}
-
-static void MostrarValoresEnPantallaDeContactoSeleccionado(string? nombre, string? apellido, string? tel, string? dir, int edad, string contactoDeEmergencia, int id)
-{
-    Console.WriteLine($"El contacto seleccionado con el ID: {id} es, ");
-    Console.WriteLine($"Nombre: {nombre}");
-    Console.WriteLine($"Apellido: {apellido}");
-    Console.WriteLine($"Tel: {tel}");
-    Console.WriteLine($"Dirección: {dir}");
-    Console.WriteLine($"Edad: {edad}");
-    Console.WriteLine($"Es Contacto de Emergencia?: {contactoDeEmergencia}");
-}
-
-static void AgregarContacto(List<int> ids, Dictionary<int, string> nombres, Dictionary<int, string> apellidos, Dictionary<int, string> telefonos, Dictionary<int, string> direcciones, Dictionary<int, int> edades, Dictionary<int, bool> contactosDeEmergencia)
-{
-    Console.Write("Digite un nombre: ");
-    var nombre = Console.ReadLine();
-    Console.Write("Digite un apellido: ");
-    var apellido = Console.ReadLine();
-    Console.Write("Digite un Telefono: ");
-    var tel = Console.ReadLine();
-    Console.Write("Digite una Direccion: ");
-    var dir = Console.ReadLine();
-    Console.Write("Digite una Edad: ");
-    var edad = int.Parse(Console.ReadLine());
-
-    bool contactoDeEmergencia = DeterminarSiEsContactoDeEmergencia();
-
-    var id = GeneradorDeId(ids);
-    ids.Add(id);
-    AgregandoValoresALosDiccionarios(nombres, apellidos, telefonos, direcciones, edades, contactosDeEmergencia, nombre, apellido, tel, dir, edad, contactoDeEmergencia, id);
-}
-
-static void AgregandoValoresALosDiccionarios(Dictionary<int, string> nombres, Dictionary<int, string> apellidos, Dictionary<int, string> telefonos, Dictionary<int, string> direcciones, Dictionary<int, int> edades, Dictionary<int, bool> contactosDeEmergencia, string? nombre, string? apellido, string? tel, string? dir, int edad, bool contactoDeEmergencia, int id)
-{
-    nombres.Add(id, nombre);
-    apellidos.Add(id, apellido);
-    telefonos.Add(id, tel);
-    direcciones.Add(id, dir);
-    edades.Add(id, edad);
-    contactosDeEmergencia.Add(id, contactoDeEmergencia);
 }
 

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Sistema de Gestión de Reservas de Gimnasio1/1.0.0": {
+        "runtime": {
+          "Sistema de Gestión de Reservas de Gimnasio1.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Sistema de Gestión de Reservas de Gimnasio1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

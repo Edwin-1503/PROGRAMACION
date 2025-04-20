@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Prog1_CSharp_Tarea4_edwin saul_2024-1723_Viernes/1.0.0": {
+        "runtime": {
+          "Prog1_CSharp_Tarea4_edwin saul_2024-1723_Viernes.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Prog1_CSharp_Tarea4_edwin saul_2024-1723_Viernes/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

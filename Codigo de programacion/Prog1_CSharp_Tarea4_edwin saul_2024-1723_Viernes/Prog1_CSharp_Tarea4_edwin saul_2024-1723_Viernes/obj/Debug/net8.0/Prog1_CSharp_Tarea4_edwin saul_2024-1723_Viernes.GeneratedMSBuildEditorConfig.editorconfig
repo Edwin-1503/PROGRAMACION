@@ -1,0 +1,15 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Prog1_CSharp_Tarea4_edwin_saul_2024_1723_Viernes
+build_property.ProjectDir = C:\PROGRAMACION\Codigo de programacion\Prog1_CSharp_Tarea4_edwin saul_2024-1723_Viernes\Prog1_CSharp_Tarea4_edwin saul_2024-1723_Viernes\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 

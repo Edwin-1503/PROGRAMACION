@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\PROGRAMACION\\Codigo de programacion\\Sistema de Gesti\u00F3n de Reservas de Gimnasio-Edwin\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{173BDA1C-94CD-4C63-8CA0-B820DC99FB17}|Sistema de Gesti\u00F3n de Reservas de Gimnasio-Edwin\\Sistema de Gesti\u00F3n de Reservas de Gimnasio-Edwin.csproj|c:\\programacion\\codigo de programacion\\sistema de gesti\u00F3n de reservas de gimnasio-edwin\\sistema de gesti\u00F3n de reservas de gimnasio-edwin\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{173BDA1C-94CD-4C63-8CA0-B820DC99FB17}|Sistema de Gesti\u00F3n de Reservas de Gimnasio-Edwin\\Sistema de Gesti\u00F3n de Reservas de Gimnasio-Edwin.csproj|solutionrelative:sistema de gesti\u00F3n de reservas de gimnasio-edwin\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{173BDA1C-94CD-4C63-8CA0-B820DC99FB17}|Sistema de Gesti\u00F3n de Reservas de Gimnasio-Edwin\\Sistema de Gesti\u00F3n de Reservas de Gimnasio-Edwin.csproj|c:\\programacion\\codigo de programacion\\sistema de gesti\u00F3n de reservas de gimnasio-edwin\\sistema de gesti\u00F3n de reservas de gimnasio-edwin\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{173BDA1C-94CD-4C63-8CA0-B820DC99FB17}|Sistema de Gesti\u00F3n de Reservas de Gimnasio-Edwin\\Sistema de Gesti\u00F3n de Reservas de Gimnasio-Edwin.csproj|solutionrelative:sistema de gesti\u00F3n de reservas de gimnasio-edwin\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Conexion.cs",
+              "DocumentMoniker": "C:\\PROGRAMACION\\Codigo de programacion\\Sistema de Gesti\u00F3n de Reservas de Gimnasio-Edwin\\Sistema de Gesti\u00F3n de Reservas de Gimnasio-Edwin\\Conexion.cs",
+              "RelativeDocumentMoniker": "Sistema de Gesti\u00F3n de Reservas de Gimnasio-Edwin\\Conexion.cs",
+              "ToolTip": "C:\\PROGRAMACION\\Codigo de programacion\\Sistema de Gesti\u00F3n de Reservas de Gimnasio-Edwin\\Sistema de Gesti\u00F3n de Reservas de Gimnasio-Edwin\\Conexion.cs",
+              "RelativeToolTip": "Sistema de Gesti\u00F3n de Reservas de Gimnasio-Edwin\\Conexion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T00:58:49.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\PROGRAMACION\\Codigo de programacion\\Sistema de Gesti\u00F3n de Reservas de Gimnasio-Edwin\\Sistema de Gesti\u00F3n de Reservas de Gimnasio-Edwin\\Program.cs",
+              "RelativeDocumentMoniker": "Sistema de Gesti\u00F3n de Reservas de Gimnasio-Edwin\\Program.cs",
+              "ToolTip": "C:\\PROGRAMACION\\Codigo de programacion\\Sistema de Gesti\u00F3n de Reservas de Gimnasio-Edwin\\Sistema de Gesti\u00F3n de Reservas de Gimnasio-Edwin\\Program.cs",
+              "RelativeToolTip": "Sistema de Gesti\u00F3n de Reservas de Gimnasio-Edwin\\Program.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAQwDcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T00:55:11.005Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

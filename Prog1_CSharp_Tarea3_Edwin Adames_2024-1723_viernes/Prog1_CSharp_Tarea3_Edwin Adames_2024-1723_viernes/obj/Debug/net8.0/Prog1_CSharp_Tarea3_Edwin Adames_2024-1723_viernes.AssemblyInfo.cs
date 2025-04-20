@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Prog1_CSharp_Tarea3_Edwin Adames_2024-1723_viernes")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4f183e0f2cdd2c9b7f81c06968665cdb9f89b6a8")]
 [assembly: System.Reflection.AssemblyProductAttribute("Prog1_CSharp_Tarea3_Edwin Adames_2024-1723_viernes")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Prog1_CSharp_Tarea3_Edwin Adames_2024-1723_viernes")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\PROGRAMACION\\Codigo de programacion\\Prog1_CSharp_Tarea3_Edwin Adames_2024-1723_viernes\\",
+  "WorkspaceRootPath": "C:\\PROGRAMACION\\Prog1_CSharp_Tarea3_Edwin Adames_2024-1723_viernes\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3726E0E4-5480-4069-87A5-5FE2D667299B}|Prog1_CSharp_Tarea3_Edwin Adames_2024-1723_viernes\\Prog1_CSharp_Tarea3_Edwin Adames_2024-1723_viernes.csproj|c:\\programacion\\codigo de programacion\\prog1_csharp_tarea3_edwin adames_2024-1723_viernes\\prog1_csharp_tarea3_edwin adames_2024-1723_viernes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3726E0E4-5480-4069-87A5-5FE2D667299B}|Prog1_CSharp_Tarea3_Edwin Adames_2024-1723_viernes\\Prog1_CSharp_Tarea3_Edwin Adames_2024-1723_viernes.csproj|c:\\programacion\\prog1_csharp_tarea3_edwin adames_2024-1723_viernes\\prog1_csharp_tarea3_edwin adames_2024-1723_viernes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3726E0E4-5480-4069-87A5-5FE2D667299B}|Prog1_CSharp_Tarea3_Edwin Adames_2024-1723_viernes\\Prog1_CSharp_Tarea3_Edwin Adames_2024-1723_viernes.csproj|solutionrelative:prog1_csharp_tarea3_edwin adames_2024-1723_viernes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\PROGRAMACION\\Codigo de programacion\\Prog1_CSharp_Tarea3_Edwin Adames_2024-1723_viernes\\Prog1_CSharp_Tarea3_Edwin Adames_2024-1723_viernes\\Program.cs",
+              "DocumentMoniker": "C:\\PROGRAMACION\\Prog1_CSharp_Tarea3_Edwin Adames_2024-1723_viernes\\Prog1_CSharp_Tarea3_Edwin Adames_2024-1723_viernes\\Program.cs",
               "RelativeDocumentMoniker": "Prog1_CSharp_Tarea3_Edwin Adames_2024-1723_viernes\\Program.cs",
-              "ToolTip": "C:\\PROGRAMACION\\Codigo de programacion\\Prog1_CSharp_Tarea3_Edwin Adames_2024-1723_viernes\\Prog1_CSharp_Tarea3_Edwin Adames_2024-1723_viernes\\Program.cs",
+              "ToolTip": "C:\\PROGRAMACION\\Prog1_CSharp_Tarea3_Edwin Adames_2024-1723_viernes\\Prog1_CSharp_Tarea3_Edwin Adames_2024-1723_viernes\\Program.cs",
               "RelativeToolTip": "Prog1_CSharp_Tarea3_Edwin Adames_2024-1723_viernes\\Program.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAUwEwAAABCAAAAAAAAAA==",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAgwEwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-18T20:31:08.928Z",
               "EditorCaption": ""
